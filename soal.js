@@ -1,10 +1,16 @@
 //soal no 1
 function hari(angka) {
-    
-    if(angka > 5 && angka <8){
+    const daftarHari = {
+        1: "senin",
+        2: "selasa",
+        3: "rabu",
+        4: "kamis",
+        5: "jumat"
+    }
+    if(angka === 6 || angka === 7){
         return "hari libur";
-    }else if(angka > 0 && angka < 6){
-        return "hari kerja";
+    }else if(angka >= 1 && angka <= 5){
+        return daftarHari[angka];
     }else{
         return "ga ada hari"
     }
